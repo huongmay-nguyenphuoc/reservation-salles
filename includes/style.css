@@ -1,0 +1,21 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#indexMain {
+    height: 100vh;
+}
