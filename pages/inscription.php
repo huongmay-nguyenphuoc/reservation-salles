@@ -1,8 +1,17 @@
 <?php
+
 if (isset($_POST['submit'])) {
     $user = new User;
     $succes = $user->register($_POST['login'], $_POST['password'], $_POST['passwordcheck']);
-    $status = $user->getStatus();
+
+    $status = $user->getStatus(); //gestion messages erreur
+    if ($status == "strength") {
+        $alert = "Le mot de passe doit contenir au moins un chiffre.";
+    } elseif ($status == "notsame") {
+        $alert = "Les mots de passes ne correspondent pas.";
+    } elseif ($status == 'unavailable') {
+        $alert = "Login déjà pris.";
+    }
 
     if ($succes == 1) {
         header("location: template.php?page=connexion");
@@ -17,9 +26,9 @@ if (isset($_POST['submit'])) {
     </div>
 
     <form action="template.php?page=inscription" method="post">
-            <?php if (isset($status)) : ?> <!-- Alerte erreur-->
+            <?php if (isset($alert)) : ?> <!-- Alerte erreur-->
             <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                <?php echo $status; ?>
+                <?php echo $alert; ?>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <?php endif; ?>

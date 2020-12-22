@@ -1,11 +1,21 @@
 <?php
-if (isset($_SESSION['user'])) {header("location: template.php?page=profil"); }
+if (isset($_SESSION['user'])) {header("location: template.php?page=profil");} //redirection utilisateur connecté
+
 if (isset($_POST['submit'])) {
     $user = new User;
     $succes = $user->connect($_POST['login'], $_POST['password']);
-    $status = $user->getStatus();
 
-    if ($succes == 1) {
+    $status = $user->getStatus(); //gestion messages erreurs
+    if ($status == "login") {
+        $alert = "Ce login n'existe pas.";
+    } elseif ($status == "password") {
+        $alert = "Vérifiez votre mot de passe.";
+    } elseif ($status == "connecte") {
+    $alert = 'Connexion réussie. Bienvenue @'.$user->getLogin().'<br>
+              <a href="template.php?page=profil">Visiter votre profil</a>';
+    }
+
+    if ($succes == 1) { //si connexion, stockage instance dans session
       $_SESSION['user'] = $user;
     }
 }
@@ -19,9 +29,9 @@ if (isset($_POST['submit'])) {
     </div>
 
     <form action="template.php?page=connexion" method="post">
-        <?php if (isset($status)) : ?> <!-- Alerte erreur-->
+        <?php if (isset($alert)) : ?> <!-- Alerte erreur-->
             <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                <?php echo $status; ?>
+                <?php echo $alert; ?>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         <?php endif; ?>

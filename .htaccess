@@ -1,0 +1,4 @@
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 "<html><H1>PROB/lem</H1></html>"
+ErrorDocument 403 "<html><H1>ACC/es interdit</H1></html>"

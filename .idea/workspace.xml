@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1e2c02-30b0-41c2-af29-7a08d1799158" name="Default Changelist" comment="" />
+    <list default="true" id="3e1e2c02-30b0-41c2-af29-7a08d1799158" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/planning.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/planning.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/reservation-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reservation-form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/template.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +54,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lVpnhBTUcsPg4nvsRMNu9ipfKO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,11 +66,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../livre-or" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../classes-php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\reservation-salles\" />
+      <recent name="C:\wamp64\www\reservation-salles\pages" />
+      <recent name="C:\wamp64\www\reservation-salles\css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,11 +98,23 @@
       <workItem from="1608217999648" duration="15219000" />
       <workItem from="1608373505756" duration="8111000" />
       <workItem from="1608382866349" duration="11583000" />
+      <workItem from="1608632404156" duration="19086000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1607941205831">
@@ -64,22 +125,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608374738561" />
-    <state x="765" y="244" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607956107906">
+    <state x="765" y="244" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608657414978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="765" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1607956107906" />
-    <state x="690" y="163" key="FileChooserDialogImpl" timestamp="1608047721732">
+    <state x="765" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608657414978" />
+    <state x="674" y="333" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608659619250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="690" y="163" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608047721732" />
+    <state x="674" y="333" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1608659619250" />
+    <state x="690" y="163" key="FileChooserDialogImpl" timestamp="1608633529959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="690" y="163" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608633529959" />
     <state x="698" y="131" key="NewPhpClassDialog" timestamp="1607959092214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="698" y="131" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1607959092214" />
-    <state x="560" y="507" key="NewPhpFileDialog" timestamp="1608221502293">
+    <state x="560" y="507" key="NewPhpFileDialog" timestamp="1608658072872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="560" y="507" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608221502293" />
+    <state x="560" y="507" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608658072872" />
     <state x="555" y="114" key="SettingsEditor" timestamp="1607692287996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -92,5 +157,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608390573155" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608647108640">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608647108640" />
   </component>
 </project>

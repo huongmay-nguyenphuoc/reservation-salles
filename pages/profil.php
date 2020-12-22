@@ -4,23 +4,35 @@ $user = $_SESSION['user'];
 
 if (isset($_POST['submit'])) {
     $succes = $user->update($_POST['login'], $_POST['password'], $_POST['passwordcheck']);
-    $status = $user->getStatus();
+
+    $status = $user->getStatus(); //gestion messages erreurs
+    if ($status == "login") {
+        $alert = "Ce login est déjà pris.";
+    } elseif ($status == "strength") {
+        $alert = "Le mot de passe doit contenir au moins un chiffre.";
+    } elseif ($status == "notsame") {
+        $alert = "Les mots de passe ne correspondent pas.";
+    } elseif ($status == "update") {
+        $alert = "Modifications enregistrées @".$user->getLogin();
+    }
 
     if ($succes == 1) {
-       $_SESSION['user'] = $user;
+       $_SESSION['user'] = $user; //update des infos dans la session
     }
 }
 ?>
 
 
 <main role="main" class="container">
+
     <div>
         <h1>PROFIL DE @<?php echo $user->getLogin() ?></h1>
     </div>
+
     <form action="template.php?page=profil" method="post">
-        <?php if (isset($status)) : ?> <!-- Alerte erreur-->
+        <?php if (isset($alert)) : ?> <!-- Alerte erreur-->
             <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                <?php echo $status; ?>
+                <?php echo $alert; ?>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         <?php endif;?>
@@ -44,4 +56,5 @@ if (isset($_POST['submit'])) {
             <button class="btn btn-outline-secondary" type="submit" name="submit">MODIFIER</button>
         </div>
     </form>
+
 </main>

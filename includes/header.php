@@ -8,17 +8,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
                         <a class="nav-link" href="template.php?page=accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="template.php?page=planning">CONF/s de la semaine</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item"> <!-- Onglet réservation désactivé si utilisateur déconnecté-->
                         <a class="nav-link <?php if (!isset($_SESSION['user'])){echo 'disabled';}?>" href="template.php?page=reservation-form">Réserver une CONF/</a>
                     </li>
 
-                    <?php if (!isset($_SESSION['user'])) : ?>
+                    <?php if (!isset($_SESSION['user'])) : ?> <!-- dropdown Utilisateur déconnecté -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -30,7 +31,7 @@
                             </ul>
                         </li>
 
-                    <?php else: ?> <!-- utilisateur connecté-->
+                    <?php else: ?> <!-- dropdown utilisateur connecté-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,6 +43,7 @@
                             </ul>
                         </li>
                     <?php endif; ?>
+
                 </ul>
                 <span class="navbar-text">
                     CONF/iance, CONF/idence
